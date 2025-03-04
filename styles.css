@@ -139,6 +139,13 @@ li {
     border-radius: 100px;
     padding: 13px;
 }
+.bck{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #e6902d;
+    opacity:0.3;
+}
 #game-area {
     width: 300px;
     height: 500px;
@@ -163,4 +170,48 @@ h1 {
 
 p {
     font-size: 18px;
+}
+
+.phone {
+    width: 360px;
+    height: 640px;
+    background-color: #000;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+    position: absolute;
+    left: 50%;
+    top:15%;
+    transform: translateX(-50%);
+}
+
+.shimg{
+    position: absolute;
+    right: 3vh;
+    bottom: 8vh;
+}
+
+.screen {
+    width: 320px;
+    height: 560px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.speaker {
+    width: 60px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
 }
