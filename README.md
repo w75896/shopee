@@ -80,7 +80,8 @@
 
 ![image](https://github.com/user-attachments/assets/ff8bdf8f-e4e3-4ee1-9301-3a93af334541)
 
-# c. 需要包含 commit 次數的截圖 16+1
-![image](https://github.com/user-attachments/assets/55481672-6f1d-41c0-a60d-eb6a4de98c36)
+# c. 需要包含 commit 次數的截圖 20+1
+![image](https://github.com/user-attachments/assets/a7173c48-8d6a-4031-8dc5-84d27e2ecfa4)
+
 
 
