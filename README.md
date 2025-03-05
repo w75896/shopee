@@ -80,5 +80,7 @@
 
 ![image](https://github.com/user-attachments/assets/ff8bdf8f-e4e3-4ee1-9301-3a93af334541)
 
-# c. 需要包含 commit 次數的截圖 
+# c. 需要包含 commit 次數的截圖 12+1
+![Uploading image.png…]()
+
 
