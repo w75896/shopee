@@ -205,6 +205,32 @@ li {
 
 }
 
+#hangboard {
+    position: absolute;
+    right: 3%;
+    top: 0;
+    width: 16%;
+    user-select: none;
+    z-index: 5;
+    /* 3D effect using filter for drop shadow */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 6px 20px rgba(0, 0, 0, 0.19));
+    /* 不可以拉圖 */
+    pointer-events: none;
+
+}
+#sc {
+    position: absolute;
+    top: 13%; /* Adjust this value to position it correctly on the board */
+    right: 4.5%;
+    transform: translateX(-50%);
+    color: #000000;
+    font-size: 35px;
+    font-weight: 1000;
+    font-family: 'Arial';
+    user-select: none;
+    z-index: 6; /* Ensure it appears above the board */
+    text-align: center; /* Center the text */
+}
 h1 {
     margin-bottom: 20px;
     user-select: none;

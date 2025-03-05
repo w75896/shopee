@@ -2,6 +2,17 @@ let score = 0;
 const scoreElement = document.getElementById('score');
 const gameArea = document.querySelector('.under'); // Updated to select .under container
 
+document.querySelector('.search-input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        document.querySelector('.search-button').click();
+    }
+});
+document.querySelector('.search-button').addEventListener('click', function () {
+    const searchValue = document.querySelector('.search-input').value;
+    console.log(searchValue);
+    window.location.href = `https://shopee.tw/search?keyword=${searchValue}`;
+});
+
 // 隨機產生橘子（替換成SVG圖形）
 function createOrange() {
     const orange = document.createElement('div');
