@@ -1,6 +1,8 @@
 let score = 0;
 const scoreElement = document.getElementById('score');
 const gameArea = document.querySelector('.under'); // Updated to select .under container
+console.log( window.innerWidth);
+console.log( window.innerHeight);
 
 document.querySelector('.search-input').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {

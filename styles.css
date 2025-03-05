@@ -40,7 +40,7 @@ body {
 
 .select1 {
     position: absolute;
-    right: 40vh;
+    right: 21%;
 }
 
 .shopee-header {
@@ -234,4 +234,169 @@ li {
 h1 {
     margin-bottom: 20px;
     user-select: none;
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+    .shopee-header {
+        width: 100%;
+        height: 12%;
+    }
+    .select {
+        left: 1%;
+        font-size: 14px;
+    }
+    .select1 {
+        right: 3%;
+        font-size: 14px;
+    }
+    .shopee_logo {
+        top: 20%;
+        left: 1%;
+        width: 100px;
+        font-size: 15px;
+    }
+    .search-container {
+        left: 30%;
+        width: 60%;
+    }
+    .search-button svg {
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+    #ac {
+        bottom: 19.5%;
+        left: 26%;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+    #board {
+        left: 5%;
+        width:50%;
+    }
+    #hangboard {
+        right: 7%;
+        width: 20%;
+        z-index: 3;
+    }
+    #sc {
+        top: 2.7%;
+        right: 2%;
+        font-size: 17px;
+    }
+    .under {
+        position: absolute;
+        
+        width: 100vw;
+        height: 88%;
+
+        z-index: 1;
+        overflow: hidden;
+    }
+        
+        
+    #img1{
+        left: -5%;
+        top:0;
+        height: ;
+        width: 300%;
+        z-index: 2;
+        overflow: hidden;
+
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .select1 {
+        right: 15%;
+    }
+    .search-container {
+        left: 15vh;
+        width: 70%;
+    }
+    #ac {
+        bottom: 28%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 22px;
+    }
+    #board {
+        left: 10%;
+        width: 70%;
+    }
+    #hangboard {
+        right: 10%;
+        width: 70%;
+    }
+    #sc {
+        top: 14%;
+        right: 10%;
+        font-size: 30px;
+    }
+}
+
+/* Small desktops */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .select1 {
+        right: 18%;
+    }
+    .search-container {
+        left: 18vh;
+        width: 60%;
+    }
+    #ac {
+        bottom: 27%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+    }
+    #board {
+        left: 8%;
+        width: 60%;
+    }
+    #hangboard {
+        right: 8%;
+        width: 60%;
+    }
+    #sc {
+        top: 13%;
+        right: 8%;
+        font-size: 32px;
+    }
+}
+
+/* Large desktops */
+@media (min-width: 1367px) {
+    .select1 {
+        right: 21%;
+    }
+    .search-container {
+        left: 70vh;
+        width: 45%;
+    }
+    #ac {
+        bottom: 27.5%;
+        left: 14%;
+        transform: translateX(-50%);
+        font-size: 25px;
+    }
+    #board {
+        left: 7%;
+        width: 16%;
+    }
+    #hangboard {
+        right: 3%;
+        width: 16%;
+    }
+    #sc {
+        top: 13%;
+        right: 4.5%;
+        font-size: 35px;
+    }
 }
