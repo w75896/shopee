@@ -7,8 +7,19 @@ function createOrange() {
     const orange = document.createElement('div');
     orange.classList.add('orange');
     orange.style.left = `${Math.random() * (gameArea.offsetWidth - 50)}px`;
-    orange.innerHTML = ;
-    
+
+    // 隨機選擇橘子圖片
+    const bugImages = [
+        { src: 'bug1.png', size: 80 },
+        { src: 'bug2.png', size: 80 },
+        { src: 'bug4.png', size: 120 }
+    ];
+    const randomImage = bugImages[Math.floor(Math.random() * bugImages.length)];
+    orange.style.backgroundImage = `url('./bug/${randomImage.src}')`;
+    orange.style.backgroundSize = 'cover';
+    orange.style.width = `${randomImage.size}px`;
+    orange.style.height = `${randomImage.size}px`;
+
     gameArea.appendChild(orange);
 
     // 讓橘子掉落
@@ -45,4 +56,4 @@ function updateScore(points) {
 }
 
 // 讓橘子隨機掉落
-setInterval(createOrange, 1000); // 每秒創建一顆橘子
+setInterval(createOrange, 1200); // 每3秒創建一顆橘子
