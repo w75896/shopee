@@ -5,6 +5,7 @@ body {
 
 .container {
     width: 100%;
+    height: 100vh;
 
 }
 
@@ -12,8 +13,9 @@ body {
     position: relative;
     top: 0px;
     width: 100%;
-    height: 6vw;
+    height: 100%;
     background-color: #ee4d2d;
+    z-index: 3;
 
 }
 
@@ -39,6 +41,12 @@ body {
 .select1 {
     position: absolute;
     right: 40vh;
+}
+
+.shopee-header {
+    width: 100%;
+    height: 10vh;
+
 }
 
 .shopee_logo {
@@ -79,15 +87,16 @@ li {
     top: 18%;
     left: 70vh;
     width: 45%;
-    
+
     align-items: center;
     background-color: #ee4d2d;
     border-radius: 8px;
-    padding: 5px;
-    
-  }
 
-  .search-input {
+
+
+}
+
+.search-input {
     border: none;
     outline: none;
     padding: 10px;
@@ -95,123 +104,97 @@ li {
     border-radius: 8px;
     flex: 1;
     font-size: 16px;
-  }
+}
 
-  .search-button {
+.search-button {
     background: none;
     border: none;
     cursor: pointer;
     margin-left: -35px;
-  }
+}
 
-  .search-button svg {
+.search-button svg {
     position: absolute;
     fill: #FF5722;
-    top:13px;
+    top: 13px;
     right: 20px;
     width: 25px;
     height: 25px;
-  }
-  .game-container {
+}
+
+.game-container {
     text-align: center;
 }
-.under{
+
+.under {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    overflow: hidden; /* Added to clip content that exceeds the boundaries */
 }
+
 .game {
     position: absolute;
     left: 50%;
-    top:10%;
+    top: 10%;
     transform: translateX(-50%);
+    z-index: 4;
 }
-#ac{
+
+#ac {
     position: absolute;
     top: 3vh;
     left: 50%;
     transform: translateX(-50%);
     color: #000000;
     margin-bottom: 24px;
-	font-size: 25px;
+    font-size: 25px;
     font-weight: 500;
     background-color: #ef6044;
     border-radius: 100px;
     padding: 13px;
+    user-select: none;
+    z-index: 3;
+    /* 設置較高的 z-index 值 */
 }
-.bck{
+
+#img1 {
+
     position: absolute;
+    z-index: 1;
+    top: -20vh;
     width: 100%;
-    height: 100vh;
-    background-color: #e6902d;
-    opacity:0.3;
+
 }
+
 #game-area {
-    width: 300px;
-    height: 500px;
+    width: 100%; /* Adjusted to fit within .under */
+    height: 100%; /* Adjusted to fit within .under */
     background-color: #e6e6e6;
     position: relative;
     overflow: hidden;
     border: 2px solid #333;
+    user-select: none;
+    z-index: 4;
+    /* 設置較高的 z-index 值 */
+}
+
+#game-area:focus {
+    outline: none;
 }
 
 .orange {
     position: absolute;
-    background-color: orange;
+    
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
+    user-select: none;
+    z-index: 5  ;
 }
 
 h1 {
     margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-}
-
-.phone {
-    width: 360px;
-    height: 640px;
-    background-color: #000;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    
-    position: absolute;
-    left: 50%;
-    top:15%;
-    transform: translateX(-50%);
-}
-
-.shimg{
-    position: absolute;
-    right: 3vh;
-    bottom: 8vh;
-}
-
-.screen {
-    width: 320px;
-    height: 560px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.speaker {
-    width: 60px;
-    height: 8px;
-    background-color: #333;
-    border-radius: 4px;
-    position: absolute;
-    top: 10px;
+    user-select: none;
 }
