@@ -303,7 +303,7 @@ h1 {
     #img1{
         left: -5%;
         top:0;
-        height: ;
+
         width: 300%;
         z-index: 2;
         overflow: hidden;
@@ -311,78 +311,19 @@ h1 {
     }
 }
 
-/* Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .select1 {
-        right: 15%;
-    }
-    .search-container {
-        left: 15vh;
-        width: 70%;
-    }
-    #ac {
-        bottom: 28%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 22px;
-    }
-    #board {
-        left: 10%;
-        width: 70%;
-    }
-    #hangboard {
-        right: 10%;
-        width: 70%;
-    }
-    #sc {
-        top: 14%;
-        right: 10%;
-        font-size: 30px;
-    }
-}
 
 /* Small desktops */
-@media (min-width: 1025px) and (max-width: 1366px) {
+@media (max-width: 2000px) {
     .select1 {
-        right: 18%;
-    }
-    .search-container {
-        left: 18vh;
-        width: 60%;
-    }
-    #ac {
-        bottom: 27%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 24px;
-    }
-    #board {
-        left: 8%;
-        width: 60%;
-    }
-    #hangboard {
-        right: 8%;
-        width: 60%;
-    }
-    #sc {
-        top: 13%;
-        right: 8%;
-        font-size: 32px;
-    }
-}
-
-/* Large desktops */
-@media (min-width: 1367px) {
-    .select1 {
-        right: 21%;
+        right: 17%;
     }
     .search-container {
         left: 70vh;
         width: 45%;
     }
     #ac {
-        bottom: 27.5%;
-        left: 14%;
+        bottom: 24%;
+        left: 13.5%;
         transform: translateX(-50%);
         font-size: 25px;
     }
@@ -395,8 +336,8 @@ h1 {
         width: 16%;
     }
     #sc {
-        top: 13%;
-        right: 4.5%;
+        top: 11.5%;
+        right: 4%;
         font-size: 35px;
     }
 }
