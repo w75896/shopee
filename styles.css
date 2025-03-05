@@ -245,7 +245,7 @@ h1 {
         width: 45%;
     }
     #ac {
-        bottom: 26%;
+        bottom: 26.5%;
         left: 13.5%;
         transform: translateX(-50%);
         font-size: 25px;
@@ -259,7 +259,7 @@ h1 {
         width: 16%;
     }
     #sc {
-        top: 11.5%;
+        top: 12.5%;
         right: 4%;
         font-size: 35px;
     }
