@@ -245,6 +245,7 @@ h1 {
         width: 45%;
     }
     #ac {
+        position: absolute;
         bottom: 26.5%;
         left: 13.5%;
         transform: translateX(-50%);
@@ -259,6 +260,7 @@ h1 {
         width: 16%;
     }
     #sc {
+        position: absolute;
         top: 12.5%;
         right: 4%;
         font-size: 35px;
